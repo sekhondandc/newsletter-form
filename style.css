@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292929;
+    font-family: 'Open Sans',sans-serif;
+}
+.container{
+    width: 500px;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transform: scale(1);
+    transition: 0.5s ease;
+}
+.shape{
+    position: absolute;
+    background: rgba(255, 153, 102, 0.1);
+    border-radius: 100%;
+    z-index: -1;
+}
+.shape.a{
+    width: 160px;
+    height: 160px;
+    bottom: -80px;
+    left: -80px;
+}
+.shape.b{
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: 30px;
+}
+.shape.c{
+    width: 600px;
+    height: 600px;
+    top: -320px;
+    right: -200px;
+}
+.content i{
+    font-size: 2em;
+    color: #ffffff;
+    background: #333333;
+    border-radius: 100%;
+    padding: 12px;
+}
+.content h1{
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+.content p{
+    font-size: 0.8em;
+}
+.form{
+    margin: 20px 0;
+}
+.mail{
+    border: none;
+    outline: none;
+    width: 40%;
+    border-radius: 25px;
+    padding: 12px 14px;
+    border: 1px solid #d1d1d1;
+    font-size: 0.8em;
+}
+.submit{
+    border: none;
+    border-radius: 25px;
+    padding: 14px 30px;
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    color: #ffffff;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+.container:hover{
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
